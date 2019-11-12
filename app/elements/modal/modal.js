@@ -1,10 +1,21 @@
 $('.popup__open-menu').click(function () {
-  $(this).text("-").addClass('popup__open-menu_active');
+  $(this).toggleClass('popup__open-menu_active');
   $(this).closest('.popup__row').next('.popup__node-list').toggleClass('popup__node-list_active');
 });
 
-$('.popup__row').on('click', '.popup__open-menu_active', function () {
+$('.popup__input').click(function () {
 
-  $(this).text("+").removeClass('popup__open-menu_active');
+  let list = $(this).closest('.popup__row').next('.popup__node-list');
 
-})
+  console.log(list);
+
+  $(list & $("input:checkbox").prop('checked', true));
+
+  /*   let list = $(this).closest('.popup__row').next('.popup__node-list').attr("class");
+    console.log(list);
+
+    $(`.${list} input:checkbox`).prop('checked', true) */
+
+
+
+});
