@@ -7,9 +7,14 @@ $('.popup__input').click(function () {
 
   let list = $(this).closest('.popup__row').next('.popup__node-list');
 
-  console.log(list);
+  if ($(this).prop('checked') == true) {
+    list.find('input').prop('checked', true);
 
-  $(list & $("input:checkbox").prop('checked', true));
+  } else {
+    list.find('input').prop('checked', false);
+  }
+
+
 
   /*   let list = $(this).closest('.popup__row').next('.popup__node-list').attr("class");
     console.log(list);
