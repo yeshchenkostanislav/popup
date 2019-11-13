@@ -14,13 +14,9 @@ $('.popup__input').click(function () {
     list.find('input').prop('checked', false);
   }
 
-
-
-  /*   let list = $(this).closest('.popup__row').next('.popup__node-list').attr("class");
-    console.log(list);
-
-    $(`.${list} input:checkbox`).prop('checked', true) */
-
-
-
 });
+
+/*   let list = $(this).closest('.popup__row').next('.popup__node-list').attr("class");
+   console.log(list);
+
+   $(`.${list} input:checkbox`).prop('checked', true) */
