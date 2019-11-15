@@ -64,6 +64,11 @@ button {
   }
 }
 
+.modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 @import "icons";
 
 @import "../elements/modal/modal";

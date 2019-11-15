@@ -3,7 +3,10 @@ html
     include ../elements/head/head
     +head('Page title', 'Page description', 'Page keywords')
     body
-        include ../elements/modal/modal
+        .modal.modal_active
+            ._dialog
+                ._content
+                    include ../elements/modal/modal
         
 
         script(src="js/libs.min.js")
